@@ -118,34 +118,7 @@
       overflow: hidden;
     }
 
-    .hero::before {
-      content: '';
-      position: absolute;
-      width: 600px;
-      height: 600px;
-      background: radial-gradient(circle, rgba(124, 88, 163, 0.3), transparent 70%);
-      top: 10%;
-      right: 10%;
-      border-radius: 50%;
-      animation: pulse 4s ease-in-out infinite;
-    }
 
-    .hero::after {
-      content: '';
-      position: absolute;
-      width: 400px;
-      height: 400px;
-      background: radial-gradient(circle, rgba(176, 153, 200, 0.2), transparent 70%);
-      bottom: 10%;
-      left: 10%;
-      border-radius: 50%;
-      animation: pulse 5s ease-in-out infinite reverse;
-    }
-
-    @keyframes pulse {
-      0%, 100% { transform: scale(1); opacity: 0.5; }
-      50% { transform: scale(1.1); opacity: 0.8; }
-    }
 
     .hero-content {
       max-width: 900px;
@@ -174,6 +147,22 @@
       font-weight: 800;
       line-height: 1.1;
       margin-bottom: 1.5rem;
+      position: relative;
+    }
+
+    .hero h1::before {
+      content: '';
+      position: absolute;
+      width: 80%;
+      height: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: radial-gradient(ellipse at center, rgba(26, 17, 41, 0.95) 0%, rgba(45, 27, 61, 0.7) 50%, transparent 100%);
+      border-radius: 50%;
+      z-index: -1;
+      filter: blur(20px);
+      animation: pulse 4s ease-in-out infinite;
     }
 
     .hero h1 .gradient-text {
@@ -218,7 +207,7 @@
     }
 
     .btn-primary {
-      background: var(--gradient-1);
+      background: #2D1B3D;
       color: white;
     }
 
@@ -828,7 +817,7 @@
       width: 300px;
       height: 300px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(255, 255, 255, 0.15), transparent 70%);
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent 70%);
       pointer-events: none;
       z-index: 0;
       transform: translate(-50%, -50%);
@@ -841,7 +830,7 @@
 
   <!-- Navigation -->
   <nav>
-    <a href="#" class="logo">UC.</a>
+    <a href="#" class="logo">UC</a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -859,7 +848,7 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
-      <div class="hero-badge"><span>Student & Aspiring Developer</span></div>
+      <div class="hero-badge"><span>Computer Science Student</span></div>
       <h1>Hi, I'm <span class="gradient-text">Udita Chakraborty</span></h1>
       <p><span class="typing-text"></span></p>
       <div class="hero-buttons">
@@ -873,22 +862,22 @@
   <section id="about">
     <div class="section-header fade-in">
       <h2>About Me</h2>
-      <p>Passionate about creating elegant solutions to complex problems</p>
+      <p>I build AI systems and agentic workflows that automate and solve real-world problems</p>
     </div>
     <div class="about-grid">
       <div class="about-image fade-in">
         <div class="image-placeholder"></div>
         <div class="about-stats">
           <div class="stat-card">
-            <div class="number">1+</div>
-            <div class="label">Year Learning</div>
+            <div class="number">3rd</div>
+            <div class="label">Year Student</div>
           </div>
           <div class="stat-card">
             <div class="number">5+</div>
             <div class="label">Projects</div>
           </div>
           <div class="stat-card">
-            <div class="number">3+</div>
+            <div class="number">5+</div>
             <div class="label">Technologies</div>
           </div>
         </div>
@@ -898,9 +887,9 @@
         <p>I'm a passionate student eager to learn and build meaningful projects. I'm currently exploring web development and looking for opportunities to grow my skills and contribute to real-world applications.</p>
         <p>When I'm not coding, you'll find me exploring new technologies, working on personal projects, or learning about the latest trends in tech.</p>
         <div class="tech-stack">
-          <span class="tech-tag">HTML</span>
-          <span class="tech-tag">CSS</span>
-          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">LangChain</span>
+          <span class="tech-tag">LangGraph</span>
           <span class="tech-tag">React</span>
           <span class="tech-tag">Node.js</span>
           <span class="tech-tag">Python</span>
@@ -920,7 +909,7 @@
     <div class="skills-grid">
       <div class="skill-card fade-in">
         <div class="skill-icon"></div>
-        <h3>Frontend Development</h3>
+        <h3>Agentic AI</h3>
         <p>Learning to build responsive and interactive user interfaces using HTML, CSS, and JavaScript.</p>
       </div>
       <div class="skill-card fade-in">
@@ -973,7 +962,7 @@
           </div>
         </div>
         <div class="project-info">
-          <h3>Task Manager App</h3>
+          <h3>Movie Recommendation System</h3>
           <p>A simple to-do list application to practice DOM manipulation and local storage.</p>
           <div class="project-tags">
             <span>JavaScript</span>
@@ -990,7 +979,7 @@
           </div>
         </div>
         <div class="project-info">
-          <h3>Weather Dashboard</h3>
+          <h3>DevOps Deployment System</h3>
           <p>A weather app that fetches data from an API and displays forecasts dynamically.</p>
           <div class="project-tags">
             <span>API</span>
