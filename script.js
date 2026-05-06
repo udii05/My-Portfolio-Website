@@ -129,7 +129,7 @@ contactForm.addEventListener('submit', (e) => {
 
 // Typing effect for hero
 const typingElement = document.querySelector('.typing-text');
-const textToType = "I build exceptional digital experiences that combine beautiful design with powerful functionality.";
+const textToType = "I build AI systems and agentic workflows that automate and solve real-world problems.";
 let charIndex = 0;
 
 function typeText() {
