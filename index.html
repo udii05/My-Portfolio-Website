@@ -467,11 +467,19 @@
     }
 
     .project-tags span {
-      padding: 0.375rem 0.75rem;
-      background: var(--bg-secondary);
-      border-radius: 6px;
+      background: #2D1B3D;
+      color: white;
+      padding: 0.375rem 1rem;
+      border-radius: 999px;
       font-size: 0.8rem;
-      color: var(--text-secondary);
+      border: none;
+      transition: all 0.3s ease;
+    }
+
+    .project-tags span:hover {
+      background: var(--gradient-1);
+      color: white;
+      transform: translateY(-2px);
     }
 
     /* Experience Section */
